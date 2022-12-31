@@ -8,7 +8,7 @@ function PeopleListInput(props) {
                 return str.trim();
             });
             props.onChange(list)
-            console.log(event.target.value)
+
         }}/>
     )
 }
