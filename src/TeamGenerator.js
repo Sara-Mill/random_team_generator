@@ -34,7 +34,9 @@ function TeamGenerator(props) {
   };
 
   return (
-    <>
+    <div className="random-team-generator-outer-container">
+      <h3>Generate Random Team</h3>
+      <div className="random-team-generator-container">
       <input
         type="number"
         onChange={(event) => {
@@ -52,8 +54,9 @@ function TeamGenerator(props) {
           </ul>
         );
       })}
-    </>
+    </div>
+    </div>
   );
-}
+};
 
 export default TeamGenerator;

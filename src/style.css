@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+.people-list-input-container,
+.random-people-picker-outer-container,
+.random-team-generator-outer-container{
+   width: 500px;
+    margin: 20px auto
+}
+.people-list-input-container label, 
+.people-list-input-container textarea{
+    display: block;
+}
+.people-list-input-container textarea{
+    width:100%;
+    height: 100px;
+    margin: 10px;
+}
+.random-people-picker-outer-container,
+.random-team-generator-outer-container{
+border: 2px solid brown;
+padding: 20px;
+}
+.random-people-picker-container
+.random-team-generator-container{
+    width:100%;
+}
+.random-people-picker-container input,
+.random-team-generator-container input{
+    width:80%
+}
+.random-people-picker-container button,
+.random-team-generator-container button{
+    width:20%
+}

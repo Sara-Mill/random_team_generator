@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PeopleListInput from './peopleListInput';
+import PeopleListInput from './PeopleListInput';
 import RandomPeoplePicker from './RandomPeoplePicker';
 import TeamGenerator from './TeamGenerator';
 
