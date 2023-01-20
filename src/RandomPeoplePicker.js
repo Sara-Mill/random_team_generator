@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { shuffle } from "./helper";
 import "./style.css";
+
 function RandomPeoplePicker(props) {
   const [noOfPeopleToSelect, setNoOfPeopleToSelect] = useState();
   const [randomPeople, setRandomPeople] = useState([]);

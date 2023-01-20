@@ -37,26 +37,26 @@ function TeamGenerator(props) {
     <div className="random-team-generator-outer-container">
       <h3>Generate Random Team</h3>
       <div className="random-team-generator-container">
-      <input
-        type="number"
-        onChange={(event) => {
-          setNoOfTeams(event.target.value);
-        }}
-      />
-      <button onClick={handleGenerateBtnClick}>Generate</button>
-      {/*displaying the team in a list format*/}
-      {teams.map((team, index) => {
-        return (
-          <ul key={index}>
-            {team.map((member, index) => {
-              return <li key={index}>{member}</li>;
-            })}
-          </ul>
-        );
-      })}
-    </div>
+        <input
+          type="number"
+          onChange={(event) => {
+            setNoOfTeams(event.target.value);
+          }}
+        />
+        <button onClick={handleGenerateBtnClick}>Generate</button>
+        {/*displaying the team in a list format*/}
+        {teams.map((team, index) => {
+          return (
+            <ul key={index}>
+              {team.map((member, index) => {
+                return <li key={index}>{member}</li>;
+              })}
+            </ul>
+          );
+        })}
+      </div>
     </div>
   );
-};
+}
 
 export default TeamGenerator;

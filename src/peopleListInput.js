@@ -1,4 +1,5 @@
-import './style.css'
+import './style.css';
+
 function PeopleListInput(props) {
   return (
     <div className="people-list-input-container">
