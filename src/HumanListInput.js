@@ -1,6 +1,6 @@
 import './style.css';
 
-function PeopleListInput(props) {
+function HumanListInput(props) {
   return (
     <div className="human-list-input-container">
         <label htmlFor="human-list-input">Please enter names seperated by commas </label>
@@ -21,4 +21,4 @@ function PeopleListInput(props) {
     </div>
   );
 }
-export default PeopleListInput;
+export default HumanListInput;
