@@ -7,6 +7,7 @@ function App() {
   const [peopleList, setPeopleList] = useState([]);
   return (
     <div className="App">
+      <h1>Welcome to Random-Team-Generator!</h1>
       <PeopleListInput onChange={setPeopleList}/>
       <RandomPeoplePicker list={peopleList}/>
       <TeamGenerator list ={peopleList}/>

@@ -2,9 +2,9 @@ import './style.css';
 
 function PeopleListInput(props) {
   return (
-    <div className="people-list-input-container">
-        <label htmlFor="people-list-input">People List Goes Here:</label>
-      <textarea id="people-list-input" 
+    <div className="human-list-input-container">
+        <label htmlFor="human-list-input">Please enter names seperated by commas </label>
+      <textarea id="human-list" 
         onChange={(event) => {
           const listString = event.target.value;
           const list = listString

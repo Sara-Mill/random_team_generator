@@ -1,35 +1,71 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: rgba(38, 36, 36, 0.647);
+  padding: 25px;
+  border-radius: 25px;
 }
-.people-list-input-container,
-.random-people-picker-outer-container,
-.random-team-generator-outer-container{
-   width: 500px;
-    margin: 20px auto
+h1 {
+  text-align: center;
+  color: #71b48d;
 }
-.people-list-input-container label, 
-.people-list-input-container textarea{
-    display: block;
+h3 {
+  background-color: #71b48d;
 }
-.people-list-input-container textarea{
-    width:100%;
-    height: 100px;
-    margin: 10px;
+.human-list-input-container,
+.random-human-picker-outer-container,
+.random-team-generator-outer-container {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #71b48d;
+  padding: 15px;
 }
-.random-people-picker-outer-container,
-.random-team-generator-outer-container{
-border: 2px solid brown;
-padding: 20px;
+.human-list-input-container label,
+.error,
+.list,
+.list-item {
+  display: block;
+  font-size: larger;
+  font-weight: 200;
+  background-color: #71b48d;
+  padding: 5px;
 }
-.random-people-picker-container
-.random-team-generator-container{
-    width:100%;
+.team-list {
+  background-size: 4px;
+  padding: 5px;
 }
-.random-people-picker-container input,
-.random-team-generator-container input{
-    width:80%
+.human-list-input-container textarea {
+  width: 95%;
+  height: 100px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #edf5f1;
 }
-.random-people-picker-container button,
-.random-team-generator-container button{
-    width:20%
+.human-list-input-container,
+.random-human-picker-outer-container,
+.random-team-generator-outer-container {
+  border: 2px solid rgb(3, 68, 20);
+  padding: 10px;
+  background-color: #71b48d;
+  border-radius: 0.5rem;
+}
+.random-human-picker-container,
+.random-team-generator-container {
+  width: 100%;
+  background-color: #71b48d;
+}
+.human-list-container input,
+.random-human-picker-container input,
+.random-team-generator-container input {
+  width: 100%;
+  background-color: #fcf7f8;
+  border-radius: 1rem;
+}
+.random-human-picker-container button,
+.random-team-generator-container button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  opacity: 70%;
+  border-radius: 1rem;
 }

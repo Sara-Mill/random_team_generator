@@ -5,7 +5,11 @@ function TeamGenerator(props) {
   const [noOfTeams, setNoOfTeams] = useState();
   const [teams, setTeams] = useState([]);
 
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleGenerateBtnClick = () => {
+    setErrorMessage("Please select the number of teams to generate");
+
     //Logic for selecting random people here..
     const shuffledArray = shuffle(props.list);
     //split the array into multiple teams
@@ -35,7 +39,7 @@ function TeamGenerator(props) {
 
   return (
     <div className="random-team-generator-outer-container">
-      <h3>Generate Random Team</h3>
+      <h3>Generate Random Teams</h3>
       <div className="random-team-generator-container">
         <input
           type="number"
@@ -44,12 +48,13 @@ function TeamGenerator(props) {
           }}
         />
         <button onClick={handleGenerateBtnClick}>Generate</button>
+        {errorMessage && <p className="error"> {errorMessage} </p>}
         {/*displaying the team in a list format*/}
         {teams.map((team, index) => {
           return (
-            <ul key={index}>
+            <ul className="team-list" key={index}>
               {team.map((member, index) => {
-                return <li key={index}>{member}</li>;
+                return <li className= "list-item" key={index}>{member}</li>;
               })}
             </ul>
           );

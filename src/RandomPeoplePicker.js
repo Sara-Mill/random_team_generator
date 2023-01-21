@@ -6,7 +6,10 @@ function RandomPeoplePicker(props) {
   const [noOfPeopleToSelect, setNoOfPeopleToSelect] = useState();
   const [randomPeople, setRandomPeople] = useState([]);
 
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handlePickBtnClick = () => {
+    setErrorMessage("Please select a number of people");
     //Logic for selecting random people here..
     const shuffledArray = shuffle(props.list);
 
@@ -20,9 +23,9 @@ function RandomPeoplePicker(props) {
   };
 
   return (
-    <div className="random-people-picker-outer-container">
+    <div className="random-human-picker-outer-container">
       <h3>Select Random People</h3>
-      <div className="random-people-picker-container">
+      <div className="random-human-picker-container">
         {/* getting the number of people to pick from the user input*/}
         <input
           type="number"
@@ -31,10 +34,12 @@ function RandomPeoplePicker(props) {
           }}
         />
         <button onClick={handlePickBtnClick}>Pick</button>
+        {errorMessage && <p className="error"> {errorMessage} </p>}
+        
         {/*choosing a person from the index and displyaing as a list element*/}
-        <ul>
+        <ul className="list">
           {randomPeople.map((person, index) => (
-            <li key={index}>{person}</li>
+            <li className="list-item" key={index}>{person}</li>
           ))}
         </ul>
       </div>
